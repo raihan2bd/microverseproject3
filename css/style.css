@@ -1,0 +1,12 @@
+#nav-bar {
+  position: fixed;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
