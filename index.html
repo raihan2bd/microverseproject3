@@ -9,30 +9,45 @@
   <body>
     <header id="header">
       <nav id="nav-bar">
-        <img id="header-img" src="./images/logo.png" />
-        <a class="nav-link" href="#features">Features</a>
+        <div class="logo">
+          <img id="header-img" src="./images/logo.png" />
+        </div>
+        <ul>
+          <li>
+            <a class="nav-link" href="#features">Features</a>
+          </li>
 
-        <a class="nav-link" href="#work">How it works</a>
+          <li>
+            <a class="nav-link" href="#work">How it works</a>
+          </li>
 
-        <a class="nav-link" href="#pricing">Pricing</a>
+          <li>
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <div id="features">features</div>
-    <div id="work">How it works</div>
-    <div id="pricing">Pricing</div>
-
     <video id="video" src="https://www.youtube.com/watch?v=gAFcKxugHCQ"></video>
 
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input
-        id="email"
-        name="email"
-        placeholder="yourmail@exemple.com"
-        type="email"
-      />
-      <input id="submit" type="submit" />
-    </form>
+    <section class="hero">
+      <h1 class="htitle">Handcrafted, home-made masterpieces</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          id="email"
+          name="email"
+          placeholder="yourmail@exemple.com"
+          type="email"
+        />
+        <input id="submit" type="submit" />
+      </form>
+    </section>
+    <section class="content">
+      <div id="features">features</div>
+      <div id="work">How it works</div>
+      <div id="pricing">Pricing</div>
+    </section>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--

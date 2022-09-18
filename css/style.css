@@ -4,19 +4,99 @@
   padding: 0;
 }
 
-#nav-bar {
-  position: fixed;
-  background-color: rgb(232, 230, 225);
-  display: flex;
-  justify-content: space-between;
+html,
+body {
+  font-family: sans-serif;
 }
 
 #header {
-  padding: 0 10px;
+  position: fixed;
+  background: #e8e6e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logo {
+  padding: 15px;
+}
+
+.logo img {
+  max-width: 300px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: #c78a05;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  background: fff;
+}
+
+#email {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+#submit {
+  padding: 10px;
+  background: #c78a05;
+}
+
+.content {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#features,
+#work,
+#pricing {
+  max-width: 400px;
+  min-width: 200px;
+  display: flex;
+  border: 1px solid #eee;
+  margin: 10px;
+  height: 100px;
+  text-align: center;
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
+  #nav-bar {
+    flex-direction: row;
+  }
+  li {
+    display: block;
   }
 }
